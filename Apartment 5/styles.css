@@ -1,0 +1,91 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(218, 210, 210);
+}
+
+
+.site {
+    width: 100%;
+    display: flex;
+}
+
+.nav {
+    padding: 50px 20px;
+    position: fixed;
+    height: 100%;
+    width: 250px;
+    background-color: rgb(41, 60, 78);
+}
+
+.logo {
+    position: absolute;
+    left: 15px;
+    top: 20px;
+}
+
+.cont {
+    position: absolute;
+    bottom: 25px;
+}
+
+.cont>a {
+    color: black;
+}
+
+.surati {
+    padding: 10px 0px 0px 250px;
+}
+
+.menu {
+    font-size: 20px;
+    font-family: fantasy;
+    position: absolute;
+    top: 200px;
+    left: -15px;
+}
+
+.menu > ul > li {
+    height: 30px;
+    width: 70px;
+    padding-top: 5px;
+    list-style: none;
+    cursor: pointer;
+    transition: color 0.5s linear;
+}
+
+.menu > ul > li > ul >a:hover {
+    text-decoration: line-through;
+    color: grey;
+}
+
+.menu > ul > li > ul > a {
+    color: black;
+}
+
+.menu ul > li > ul {
+    visibility: hidden;
+    position: relative;
+    right: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: linear 0.5s;
+    list-style: none;
+    font-family: monospace;
+}
+
+.menu ul > li:hover > ul {
+    visibility: visible;
+}
+
+
+.card:hover {
+    box-shadow: -1px 9px 40px -12px;
+}
+
+#carouselExampleCaptions {
+    top: 100px;
+    left: 100px;
+}
